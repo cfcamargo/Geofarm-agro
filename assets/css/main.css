@@ -66,7 +66,8 @@ ul {
 }
 
 #menu-navigation a:hover {
-  border-bottom: white 4px solid;
+  border-bottom: white 3px solid;
+  
 }
 
 .mobal-icon-open {
@@ -74,7 +75,7 @@ ul {
   opacity: 0;
 }
 
-#banner {
+.banner {
   width: 100%;
   height: 100vh;
   background: url(/assets/images/banner.jpeg);
@@ -120,7 +121,8 @@ ul {
 }
 
 .banner-content .banner-actions button:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
+  transition: ease all 1s;
   opacity: 0.8;
 }
 
@@ -135,29 +137,44 @@ ul {
   width: 400px;
 }
 
+.mobal-icon-close{
+    display: none;
+}
+
+
+
 
 
 
 @media screen and (max-width: 900px) {
   #menu-navigation {
     visibility: hidden;
-    opacity: 1;
+    opacity: 0;
     display: flex;
     flex-direction: column !important;
     justify-content: center !important;
     gap: 3rem;
 
     position: absolute;
-    top: 0;
+    top: -2000;
     right: 0;
 
     background-color: white;
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
+
+    transition: all ease .3s;
+  }
+
+  #menu-navigation.show{
+    visibility: visible !important;
+    opacity: 1 !important;
+    top: 0;
+    transition: all ease .3s;
   }
 
   #menu-navigation a {
-    color: blue;
+    color: #192A56;
   }
 
   .mobal-icon-open {
@@ -172,6 +189,22 @@ ul {
     font-size: 1.5rem;
     color: white;
   }
+
+  .mobal-icon-close.show{
+    display: inline-block;
+}
+
+
+  .mobal-icon-close i{
+    font-size: 1.5rem;
+    color: #192A56;
+    position: absolute;
+    top: 20;
+    right: 20;
+    z-index: 9999;
+}
+
+
 }
 
 
