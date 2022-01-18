@@ -23,6 +23,8 @@ header {
   top: 0;
 }
 
+
+
 ul {
   list-style: none;
 }
@@ -33,6 +35,15 @@ ul {
   margin: 0 auto;
 }
 
+.divisor {
+  width: 80px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 10px;
+  background-color: #192a56;
+}
+
 .logo {
   display: grid;
   justify-content: flex-start;
@@ -40,9 +51,10 @@ ul {
 
 #menu {
   margin: 0 auto;
+  
 
   height: var(--header-heigth);
-  padding: 0.5rem;
+  
 
   display: grid;
   grid-template-columns: 120px 1fr;
@@ -51,6 +63,7 @@ ul {
 }
 
 #menu-navigation {
+  height: 200%;
   display: grid;
   grid-auto-flow: column;
   gap: 1rem;
@@ -67,10 +80,18 @@ ul {
 
 #menu-navigation a:hover {
   border-bottom: white 3px solid;
-  
+}
+
+.scroll {
+  background: white;
+}
+
+.scroll #menu-navigation a{
+  color: #192a56;
 }
 
 .mobal-icon-open {
+  display: none;
   visibility: hidden;
   opacity: 0;
 }
@@ -137,14 +158,65 @@ ul {
   width: 400px;
 }
 
-.mobal-icon-close{
-    display: none;
+.mobal-icon-close {
+  display: none;
 }
 
+#cards {
+  margin: 0 auto;
+  width: 100%;
+}
 
+#cards h2 {
+  text-align: center;
+  width: 700px;
 
+  font-size: 2.5rem;
+  margin: 4rem auto;
+}
 
+#cards .subtitle{
+  font-size: 1.5rem;
+  width: 70%;
+  margin: 4rem auto;
+  text-align: center;
+  
+}
 
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  padding: 1rem 1.2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  color: #192a56;
+  height: 500px;
+
+  -webkit-box-shadow: 0px 0px 13px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 13px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 13px -5px rgba(0, 0, 0, 0.75);
+}
+
+.card-cover {
+  height: 100px;
+}
+
+.card img {
+  width: 150px;
+}
 
 @media screen and (max-width: 900px) {
   #menu-navigation {
@@ -163,18 +235,18 @@ ul {
     width: 100vw;
     height: 100vh;
 
-    transition: all ease .3s;
+    transition: all ease 0.3s;
   }
 
-  #menu-navigation.show{
+  #menu-navigation.show {
     visibility: visible !important;
     opacity: 1 !important;
     top: 0;
-    transition: all ease .3s;
+    transition: all ease 0.3s;
   }
 
   #menu-navigation a {
-    color: #192A56;
+    color: #192a56;
   }
 
   .mobal-icon-open {
@@ -186,91 +258,73 @@ ul {
   }
 
   .mobal-icon-open i {
+
     font-size: 1.5rem;
     color: white;
   }
 
-  .mobal-icon-close.show{
+  .mobal-icon-close.show {
     display: inline-block;
-}
+  }
 
-
-  .mobal-icon-close i{
+  .mobal-icon-close i {
     font-size: 1.5rem;
-    color: #192A56;
+    color: #192a56;
     position: absolute;
     top: 20;
     right: 20;
     z-index: 9999;
+  }
 }
-
-
-}
-
 
 @media screen and (max-width: 770px) {
-    .banner-content {
-      grid-template-rows: 1fr 1fr;
-      grid-template-columns: 1fr;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-  
+  .banner-content {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   .banner-content .banner-actions {
-  
-      justify-content: center;
-  
+    justify-content: center;
   }
-  
+
   .banner-content .banner-actions h1 {
-  
-      font-size: 1.5rem;
-  
+    font-size: 1.5rem;
   }
-  
-  
+
   .banner-content .banner-actions button {
-      
-      margin: 0 auto;
-      width: 220px;
-      height: 55px;
-      font-size: 1rem;
-  
+    margin: 0 auto;
+    width: 220px;
+    height: 55px;
+    font-size: 1rem;
   }
-  
-    .banner-selo{
-        justify-content: center;
-    }
-  
-    .banner-selo img {
-      margin: 0 auto;
-      width: 270px;
-    }
+
+  .banner-selo {
+    justify-content: center;
   }
+
+  .banner-selo img {
+    margin: 0 auto;
+    width: 270px;
+  }
+}
 
 @media screen and (max-width: 300px) {
+  .banner-content .banner-actions h1 {
+    font-size: 1.2rem;
+  }
 
+  .banner-selo img {
+    margin: 0 auto;
+    width: 200px;
+  }
 
-    .banner-content .banner-actions h1 {
-  
-        font-size: 1.2rem;
-    
-    }
-
-    .banner-selo img {
-        margin: 0 auto;
-        width: 200px;
-      }
-
-      .banner-content .banner-actions button {
-      
-        margin: 0 auto;
-        width: 200px;
-        height: 50px;
-        font-size: .8rem;
-    
-    }
-
-
+  .banner-content .banner-actions button {
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    font-size: 0.8rem;
+  }
 }
