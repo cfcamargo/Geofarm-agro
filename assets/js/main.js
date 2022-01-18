@@ -1,5 +1,5 @@
 const menuNavigation = document.querySelector('#menu-navigation')
-const mobileButtonOpen = document.querySelector(".mobal-icon-open")
+const mobileButtonOpen = document.querySelector(".mobal-icon-open i")
 const mobileButtonClose = document.querySelector(".mobal-icon-close")
 
 
@@ -73,7 +73,7 @@ window.addEventListener('scroll', () => {
 
 
 
-// swipper
+// Configuração da biblioteca swipper para o slide
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,

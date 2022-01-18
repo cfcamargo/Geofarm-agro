@@ -38,6 +38,10 @@ ul {
   margin: 0 auto;
 }
 
+.division-wrapper{
+  padding-top: calc(var(--header-heigth) + 1rem);
+}
+
 .divisor {
   width: 80px;
   margin: 0 auto;
@@ -101,6 +105,7 @@ ul {
   display: none;
   visibility: hidden;
   opacity: 0;
+  
 }
 
 .banner {
@@ -283,6 +288,10 @@ ul {
   width: 300px;
 }
 
+#modal{
+  cursor: pointer;
+}
+
 #modal:hover {
   transform: scale(1.05);
   transition: all ease 0.3s;
@@ -319,6 +328,7 @@ ul {
   font-size: 1.5rem;
   color: white;
   padding: 2rem;
+  cursor: pointer;
 }
 
 .modal .content {
@@ -334,13 +344,9 @@ ul {
   margin: 0 auto;
 }
 
-.slides-container {
-  width: 95%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  justify-content: center;
-  align-items: center;
+
+#services{
+  padding-top: calc(var(--header-heigth) + 1rem);
 }
 
 #services h3 {
@@ -353,6 +359,15 @@ ul {
 #services h4 {
   text-align: center;
   font-weight: bold;
+}
+
+.slides-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 #swipper-slide {
@@ -476,6 +491,7 @@ ul {
   .mobal-icon-open i {
     font-size: 1.5rem;
     color: white;
+    cursor: pointer;
   }
 
   .mobal-icon-close.show {
@@ -489,6 +505,7 @@ ul {
     top: 20;
     right: 20;
     z-index: 9999;
+    cursor: pointer;
   }
 }
 
