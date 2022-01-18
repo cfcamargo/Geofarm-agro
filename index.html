@@ -14,10 +14,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;0,900;1,700&display=swap"
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/assets/fonts/css/all.css" />
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
@@ -212,7 +216,7 @@
 
               <div class="modal">
                 <div class="header">
-                    <i class="fas fa-times" id="modal-icon-close"></i>
+                  <i class="fas fa-times" id="modal-icon-close"></i>
                 </div>
                 <div class="content">
                   <img
@@ -225,8 +229,134 @@
           </div>
         </div>
       </section>
+
+      <div class="divisor"></div>
+
+      <section id="services">
+        <div class="container">
+          <h3>Nossos Serviços</h3>
+          <h4>Mapeamento , Construção e Equilibrio do solo</h4>
+        </div>
+
+        <div id="swipper-slide">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="container">
+                  <div class="slide-wrapper">
+                    <div class="swiper-content">
+                      <div class="content-actions">
+                        <div class="header">
+                          <h3>Mapeamento da Fertilidade do solo</h3>
+                          <p>
+                            Nesta modalidade são mapeadas toda fertilidade
+                            química do solo.
+                          </p>
+                        </div>
+
+                        <ul>
+                          <li>Amostragem de Solo</li>
+                          <li>Processamento de Mapas</li>
+                          <li>Altimetria, textura, fertilidade química</li>
+                          <li>
+                            Recomendação técnica de uso de corretivos e
+                            fertilizantes em Taxa Variável
+                          </li>
+                          <li>Entrega técnica personalizada</li>
+                        </ul>
+
+                        <button>Solicite Agora</button>
+                      </div>
+                      <div class="content-cover">
+                        <img
+                          src="/assets/images/swipper/map.png"
+                          alt="Mão mexendo com solo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container">
+                  <div class="slide-wrapper">
+                    <div class="swiper-content">
+                      <div class="content-actions">
+                        <div class="header">
+                          <h3>Consultoria para equilibrio da fertilidade do solo</h3>
+                          <p>
+                            Nesta modalidade mapeamos toda fertilidade química, física e biológica do solo.
+                          </p>
+                        </div>
+
+                        <ul>
+                          <li>Amostragem de Solo</li>
+                          <li>Amostragem da compactação do solo</li>
+                          <li>Analise de seiva</li>
+                          <li>Processamento de Mapas</li>
+                          <li>Altimetria, textura, fertilidade química e biológica, mapas de colheita</li>
+                          <li>
+                            Recomendação técnica de corretivos,  fertilizantes, Semeadura e Adubação em Taxa Variável
+                          </li>
+                          <li>Reposição de adubação com base na exportação pela colheita</li>
+                          <li>Visita técnica à campo para avaliação do desenvolvimento da lavoura</li>
+                          <li>Entrega técnica personalizada</li>
+                          <li>Acompanhamento de 5 anos</li>
+                        </ul>
+
+                        <button>Solicite Agora</button>
+                      </div>
+                      <div class="content-cover">
+                        <img
+                          src="/assets/images/swipper/cons.png"
+                          alt="Mão mexendo com solo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container">
+                  <div class="slide-wrapper">
+                    <div class="swiper-content">
+                      <div class="content-actions">
+                        <div class="header">
+                          <h3>Análise de Seiva</h3>
+                        </div>
+
+                        <ul>
+                          <li>Rapida, moderna e eficiente</li>
+                          <li>Avaliação nutricional e fisiológica das plantas</li>
+                          <li>Diagnóstico da sustentabilidade a praga e doenças</li>
+                          <li>Recomendação eficiente de fertilizantes</li>
+                          <li>Melhor relação custo benefício</li>
+                          <li>Resultados mais rápidos para melhor tomada de decisões.</li>
+                        </ul>
+
+                        <button>Solicite Agora</button>
+                      </div>
+                      <div class="content-cover">
+                        <img
+                          src="/assets/images/swipper/seiva.png"
+                          alt="Mão mexendo com solo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="/assets/js/main.js"></script>
   </body>
 </html>

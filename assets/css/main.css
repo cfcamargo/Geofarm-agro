@@ -25,6 +25,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 9999999999999999;
 }
 
 ul {
@@ -282,23 +283,20 @@ ul {
   width: 300px;
 }
 
-
-#modal:hover{
+#modal:hover {
   transform: scale(1.05);
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 
-
-.modal{
+.modal {
   display: none;
-  
+
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, .8);
-  
+  background: rgba(0, 0, 0, 0.8);
 }
 
-.modal.show{
+.modal.show {
   position: fixed;
   top: 0;
   left: 0;
@@ -307,22 +305,23 @@ ul {
   align-items: center;
   grid-template-columns: 100%;
   grid-template-rows: 100px 1fr;
+  z-index: 9999999999999999999999;
 }
 
-.modal .header{
+.modal .header {
   width: 100%;
   display: grid;
   justify-content: flex-end;
   align-items: center;
-  
 }
 
-.modal .header i{
+.modal .header i {
+  font-size: 1.5rem;
   color: white;
   padding: 2rem;
 }
 
-.modal .content{
+.modal .content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -330,12 +329,109 @@ ul {
   height: 100%;
 }
 
-.modal img{
+.modal img {
   width: 60%;
   margin: 0 auto;
 }
 
+.slides-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
 
+#services h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #192a56;
+  text-align: center;
+}
+
+#services h4 {
+  text-align: center;
+  font-weight: bold;
+}
+
+#swipper-slide {
+  margin-top: 4rem;
+  background-color: #f5f6fa;
+}
+
+.slide-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.swiper-content .header h3 {
+  font-weight: bold;
+  font-size: 2.5rem !important;
+  text-align: left !important;
+  border-left: 6px solid #192a56;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+#swipper-slide .content-actions {
+  width: 80%;
+  display: grid;
+  gap: 3rem;
+}
+
+#swipper-slide .content-actions ul{
+  display: grid;
+  gap: 1rem;
+  list-style-type: disc;
+  padding: 0 2rem;
+}
+
+#swipper-slide .content-actions button {
+
+  width: 200px;
+  height: 60px;
+  color: white;
+  font-size: 1.2rem;
+  background-color: #192a56;
+  border: none;
+
+}
+
+#swipper-slide .content-actions button:hover {
+
+  transform: scale(1.05);
+  opacity: .9;
+  transition: all ease .3s;
+
+}
+
+
+
+
+#swipper-slide .content-cover img {
+  -webkit-box-shadow: 46px -43px 0px -4px rgba(25, 42, 86, 1);
+  -moz-box-shadow: 46px -43px 0px -4px rgba(25, 42, 86, 1);
+  box-shadow: 46px -43px 0px -4px rgba(25, 42, 86, 1);
+}
+
+
+.swiper{
+  height: 1080px !important;
+}
 
 @media screen and (max-width: 900px) {
   #menu-navigation {
@@ -448,7 +544,7 @@ ul {
 
   .about-content {
     grid-template-columns: 1fr;
-    grid-template-rows: 200px auto;
+    grid-template-rows: 1fr 1fr;
     gap: 4rem;
     grid-template-areas: 'description' 'image';
   }
@@ -461,12 +557,70 @@ ul {
     grid-area: description;
   }
 
-  .modal img{
+  .modal img {
     width: 90%;
     margin: 0 auto;
   }
 
+  .swiper{
+    height: 1600px !important;
+  }
+
+
+  .swiper-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1.5fr;
+    
+  }
+
+  .swiper-content .content-actions{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  .swiper-cover{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  #swipper-slide .content-actions {
+    width: 100%;
+    display: grid;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+
+  .swiper-content .header h3 {
+    font-weight: bold;
+    font-size: 2.5rem !important;
+    text-align: center !important;
+    border-left: none;
+    margin-bottom: 1rem;
+    
+  }
+
+  #swipper-slide .content-actions ul{
+    list-style: none;
+  }
+
+
+  #swipper-slide .content-actions button{
+    
+    margin: 0 auto;
   
+  }
+
 }
 
 @media screen and (max-width: 300px) {

@@ -1,11 +1,9 @@
 const menuNavigation = document.querySelector('#menu-navigation')
 const mobileButtonOpen = document.querySelector(".mobal-icon-open")
 const mobileButtonClose = document.querySelector(".mobal-icon-close")
-const modalClose = document.querySelector('#modal-icon-close')
-const modal = document.querySelector('.modal')
-const openModal = document.querySelector('#modal')
 
 
+// abrir e fechar menu mobile
 mobileButtonOpen.addEventListener('click', ()=>{
     menuNavigation.classList.add('show')
     setTimeout(()=>{
@@ -19,6 +17,8 @@ mobileButtonClose.addEventListener('click', ()=>{
 })
 
 
+
+//fechar menu mobile ao clicar em algum link
 const links = document.querySelectorAll('#menu-navigation li a');
 for(const link of links){
     link.addEventListener('click', () => {
@@ -49,7 +49,13 @@ function changeHeaderOnScroll() {
     }
 }
 
-openModal.addEventListener('click', ()=>{
+
+
+// modal de certificado
+const modalClose = document.querySelector('#modal-icon-close')
+const modal = document.querySelector('.modal')
+const openModalButton = document.querySelector('#modal')
+openModalButton.addEventListener('click', ()=>{
     modal.classList.add('show')
 })
 
@@ -64,3 +70,21 @@ modalClose.addEventListener('click', ()=>{
 window.addEventListener('scroll', () => {
     changeHeaderOnScroll()
 });
+
+
+
+// swipper
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
