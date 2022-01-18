@@ -32,6 +32,10 @@ ul {
   list-style: none;
 }
 
+h2,h3{
+  color: #192a56;
+}
+
 .container {
   width: 95%;
   max-width: 1200px;
@@ -273,8 +277,9 @@ ul {
 
 .content-description h3 {
   font-size: 2rem;
-  border-left: 5px solid white;
+  border-left: 5px solid #273C75;
   padding-left: 1rem;
+  color: #273C75;
 }
 
 .content-cover {
