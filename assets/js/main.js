@@ -1,6 +1,9 @@
 const menuNavigation = document.querySelector('#menu-navigation')
 const mobileButtonOpen = document.querySelector(".mobal-icon-open")
 const mobileButtonClose = document.querySelector(".mobal-icon-close")
+const modalClose = document.querySelector('#modal-icon-close')
+const modal = document.querySelector('.modal')
+const openModal = document.querySelector('#modal')
 
 
 mobileButtonOpen.addEventListener('click', ()=>{
@@ -45,6 +48,15 @@ function changeHeaderOnScroll() {
 
     }
 }
+
+openModal.addEventListener('click', ()=>{
+    modal.classList.add('show')
+})
+
+
+modalClose.addEventListener('click', ()=>{
+    modal.classList.remove('show')
+})
 
 
 
