@@ -12,15 +12,19 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/assets/fonts/css/all.css">
+    <link rel="stylesheet" href="/assets/fonts/css/all.css" />
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="container">
         <nav id="menu">
           <div class="logo">
-            <img class="geo.logo" src="/assets/images/geo_white.png" alt="Logo Geofarm" />
+            <img
+              id="geo-logo"
+              src="/assets/images/logos/geo_white.png"
+              alt="Logo Geofarm"
+            />
           </div>
           <ul id="menu-navigation">
             <li><a href="#home">Home</a></li>
@@ -34,7 +38,7 @@
           </div>
           <div class="mobal-icon-close">
             <i class="fas fa-times"></i>
-          </div>        
+          </div>
         </nav>
       </div>
     </header>
@@ -42,96 +46,166 @@
     <main>
       <section id="home" class="banner">
         <div class="blur">
-            <div class="container">
-                <div class="banner-content">
-                    <div class="banner-actions">
-                        <h1>A dose certa para sua produtividade</h1>
-                        <button>Nossos Serviços</button>
-                    </div>
-                    <div class="banner-selo">
-                        <img src="/assets/images/selo.png" alt="Selo Totum">
-                    </div>
-                </div>
+          <div class="container">
+            <div class="banner-content">
+              <div class="banner-actions">
+                <h1>A dose certa para sua produtividade</h1>
+                <button>Nossos Serviços</button>
+              </div>
+              <div class="banner-selo">
+                <img src="/assets/images/selo.png" alt="Selo Totum" />
+              </div>
             </div>
+          </div>
         </div>
       </section>
 
-      <div class="divisor">
-
-      </div>
+      <div class="divisor"></div>
 
       <section id="cards">
-          <div class="container">
-
-            <h2>
-                Soluções customizadas para todas as etapas da sua produção
-            </h2>
-              <div class="cards">
-                  <div class="card">
-                      <div class="card-cover">
-                        <img src="/assets/images/cards/map.svg" alt="Mapeamento Cover">
-                      </div>
-
-                      <div class="card-title">
-                        <h3>Mapeamento</h3>
-                      </div>
-                      <div class="card-description">
-                        <ul>
-                            <li>Amostragem de solo</li>
-                            <li>Processamento de mapas</li>
-                            <li>Amostragem de compactação do solo</li>
-                            <li>Mapeamento de nematóides</li>
-                            <li>Analise de seiva</li>
-                        </ul>
-                      </div>
-                  </div>
-
-                  <div class="card">
-                    <div class="card-cover">
-                      <img src="/assets/images/cards/correct.svg" alt="Mao segurando solo com planta">
-                    </div>
-
-                    <div class="card-title">
-                      <h3>Correção</h3>
-                    </div>
-                    <div class="card-description">
-                      <ul>
-                          <li>Tecnologia para aplicação em taxa variavel para distribuidores e plantadeiras</li>
-                          <li>Recomendação personalizada para aplicação</li>
-                          <li>Mapas de aplicação de Calcáreo, Gesso, Cloreto</li>
-                          <li>Recomendação Foliar</li>
-                      </ul>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-cover">
-                      <img src="/assets/images/cards/economy.svg" alt="Sinal de menos com sinal de porcentagem, indicando economia">
-                    </div>
-
-                    <div class="card-title">
-                      <h3>Economia e produtividade</h3>
-                    </div>
-                    <div class="card-description">
-                      <ul>
-                          <li>Economia no adubo, com aplicações apenas do ncessário</li>
-                          <li>Economia de semente com taxa variavel de acordo com variabilidade do solo</li>
-                          <li>Aumento de produtividade</li>
-                      </ul>
-                    </div>
-                </div>
+        <div class="container">
+          <h2>Soluções customizadas para todas as etapas da sua produção</h2>
+          <div class="cards">
+            <div class="card">
+              <div class="card-cover">
+                <img
+                  src="/assets/images/cards/map.svg"
+                  alt="Mapeamento Cover"
+                />
               </div>
-              
-              <h3 class="subtitle">Mapeamos as necessidades do solo, e oferecemos recomendações customizadas para uma correção efetiva, gerando melhoria de produtividae e consequentemente da rentabilidade</h3>
+
+              <div class="card-title">
+                <h3>Mapeamento</h3>
+              </div>
+              <div class="card-description">
+                <ul>
+                  <li>Amostragem de solo</li>
+                  <li>Processamento de mapas</li>
+                  <li>Amostragem de compactação do solo</li>
+                  <li>Mapeamento de nematóides</li>
+                  <li>Analise de seiva</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-cover">
+                <img
+                  src="/assets/images/cards/correct.svg"
+                  alt="Mao segurando solo com planta"
+                />
+              </div>
+
+              <div class="card-title">
+                <h3>Correção</h3>
+              </div>
+              <div class="card-description">
+                <ul>
+                  <li>
+                    Tecnologia para aplicação em taxa variavel para
+                    distribuidores e plantadeiras
+                  </li>
+                  <li>Recomendação personalizada para aplicação</li>
+                  <li>Mapas de aplicação de Calcáreo, Gesso, Cloreto</li>
+                  <li>Recomendação Foliar</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-cover">
+                <img
+                  src="/assets/images/cards/economy.svg"
+                  alt="Sinal de menos com sinal de porcentagem, indicando economia"
+                />
+              </div>
+
+              <div class="card-title">
+                <h3>Economia e produtividade</h3>
+              </div>
+              <div class="card-description">
+                <ul>
+                  <li>Economia no adubo, com aplicações apenas do necessário</li>
+                  <li>
+                    Economia de semente com taxa variavel de acordo com
+                    variabilidade do solo
+                  </li>
+                  <li>Aumento de produtividade</li>
+                </ul>
+              </div>
+            </div>
           </div>
+
+          <h3 class="subtitle">
+            Mapeamos as necessidades do solo, e oferecemos recomendações
+            customizadas para uma correção efetiva, gerando melhoria de
+            produtividae e consequentemente da rentabilidade
+          </h3>
+        </div>
       </section>
 
+      <div class="divisor"></div>
 
+      <section id="about">
+        <div class="effect">
+          <div class="container">
+            <div class="about-content">
+              <div class="content-description">
+                <h3>Quem Somos?</h3>
+                <p>
+                  A Geofarm é uma empresa que desenvolve estratégias
+                  inteligentes de cultivo para a prática agrícola. Somos
+                  parceiros de Agricultores Inovadores e trabalhamos com eles
+                  para melhorar os processos em Agricultura de Precisão.
+                </p>
+                <p>
+                  Hoje possuimos uma equipe de 35 colaboradores na area
+                  administrativa, mecanica, cartográfica, com especializações,
+                  Phd doutorado e outros.
+                </p>
+              </div>
+
+              <div class="content-cover">
+                <img src="/assets/images/about.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="about-content">
+              <div class="content-cover">
+                <img src="/assets/images/mission.svg" alt="" />
+              </div>
+              <div class="content-description">
+                <h3>Missão</h3>
+                <p>
+                  Fornecer ao Produtor Agrícola tecnologias que proporcionam
+                  aumento em sua produtividade e rentabilidade.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-content">
+              <div class="content-description">
+                <h3>Empresa certificada</h3>
+                <p>
+                  A geofarm é certificada pela totum com os selos básico e
+                  pleno.
+                </p>
+                <p>
+                  O Selo atesta que a associada certificada está de acordo com
+                  as especificações definidas na Norma de Referência, no
+                  respectivo Nível, no enquadramento de cada tipo de prestação
+                  de serviço de agricultura de precisão.
+                </p>
+              </div>
+
+              <div class="content-cover">
+                <img src="/assets/images/certificado.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
-
-
-
 
     <script src="/assets/js/main.js"></script>
   </body>
