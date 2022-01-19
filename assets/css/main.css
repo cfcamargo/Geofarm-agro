@@ -499,6 +499,10 @@ a {
   align-items: center;
 }
 
+.tx-cover.plant{
+  justify-content: flex-end;
+}
+
 .tx-cover img {
   width: 450px;
   -webkit-box-shadow: -28px -69px 0px -28px rgba(25, 42, 86, 1);
@@ -531,7 +535,7 @@ a {
 }
 
 .tx-content.plant {
-  text-align: left;
+  text-align: left !;
 }
 
 .tx-cover.mon:nth-child(2){
