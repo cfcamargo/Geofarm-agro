@@ -110,4 +110,13 @@ var swiper = new Swiper(".mySwiper", {
   copy.innerHTML = `<i><img src="/assets/images/faveicon.ico" alt="Logo"></i>© Copyright 2010 - ${year} Geofarm Agricultura de Precisão LTDA`
   
 
+  const scrollReveal = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration:700,
+    reset: true
+})
 
+scrollReveal.reveal(`
+                    .banner-actions h1, .banner-actions a, .banner-selo, .division-wrapper, #cards h2 , .cards ,.subtitle, .content-description, .about-content.content-cover, #services.container h3, #services h4, #swipper-slide, .eletronics-header h3, .tx-cover, .tx-content, #faq h3, .faq, .footer-header, .adress, .form, .footer-footer
+                    `, {interval:100});

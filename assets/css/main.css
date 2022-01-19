@@ -446,6 +446,13 @@ a {
   border: none;
 }
 
+#swipper-slide .content-actions button a{
+
+  color: white;
+
+}
+
+
 #swipper-slide .content-actions button:hover {
   transform: scale(1.05);
   opacity: 0.9;
