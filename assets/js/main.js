@@ -88,3 +88,26 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+
+  // Faq 
+
+  const faqs = document.querySelectorAll('.faq')
+
+  faqs.forEach(faq => {
+      faq.addEventListener('click', ()=>{
+          faq.classList.toggle('active')
+      })
+  })
+
+
+  const copy = document.querySelector('#copy')
+
+  const data = new Date()
+  year = data.getFullYear()
+
+  copy.innerHTML = `<i><img src="/assets/images/faveicon.ico" alt="Logo"></i>© Copyright 2010 - ${year} Geofarm Agricultura de Precisão LTDA`
+  
+
+
