@@ -43,7 +43,7 @@
             <li><a href="#about">Sobre</a></li>
             <li><a href="#services">Serviços</a></li>
             <li><a href="#eletronics">Eletrônicos</a></li>
-            <li><a href="/contact.html">Contato</a></li>
+            <li><a href="#contact">Contato</a></li>
           </ul>
           <div class="mobal-icon-open">
             <i class="fas fa-bars"></i>
@@ -273,11 +273,11 @@
                           <li>Entrega técnica personalizada</li>
                         </ul>
 
-                        <button><a target="_blank"
+                        <a target="_blank"
                           href="https://api.whatsapp.com/send?phone=5567999754293&text=Ola%2C%20estou%20interessado%20no%20servi%C3%A7o%20de%20voces!%20"
                         >
                           Solicite agora
-                        </a></button>
+                        </a>
                       </div>
                       <div class="content-cover">
                         <img
@@ -304,36 +304,31 @@
                           </p>
                         </div>
 
-                        <ul>
-                          <li>Amostragem de solo</li>
-                          <li>Amostragem da compactação do solo</li>
+                        <ul class="consulting">
+                         <div class="left">
+                          <li>Amostragem de solo e compactação do Solo</li>
                           <li>Análise de seiva</li>
-                          <li>Processamento de Mapas</li>
+                          <li>Mapas de altimetria, textura, fertilidade química e
+                            biológica</li>
                           <li>
-                            Altimetria, textura, fertilidade química e
-                            biológica, mapas de colheita
+                            Recomendação técnica de corretivos e fertilizantes
                           </li>
-                          <li>
-                            Recomendação técnica de corretivos, fertilizantes,
-                            semeadura e adubação em taxa variável
-                          </li>
-                          <li>
-                            Reposição de adubação com base na exportação pela
-                            colheita
-                          </li>
-                          <li>
-                            Visita técnica à campo para avaliação do
-                            desenvolvimento da lavoura
-                          </li>
-                          <li>Entrega técnica personalizada</li>
-                          <li>Acompanhamento de 5 anos</li>
+                         </div>
+                         <div class="rig">
+                           <li>Mapas de colheita e de aplicação</li>
+                        <li>
+                          Visita técnica à campo para avaliação do
+                          desenvolvimento da lavoura
+                        </li>
+                        <li>Entrega técnica personalizada</li>
+                        <li>Acompanhamento de 5 anos</li></div>
                         </ul>
 
-                        <button><a target="_blank"
+                        <a target="_blank"
                           href="https://api.whatsapp.com/send?phone=5567999754293&text=Ola%2C%20estou%20interessado%20no%20servi%C3%A7o%20de%20voces!%20"
                         >
                           Solicite agora
-                        </a></button>
+                        </a>
                       </div>
                       <div class="content-cover">
                         <img
@@ -370,13 +365,13 @@
                           </li>
                         </ul>
 
-                        <button>
+                        
                           <a target="_blank"
                             href="https://api.whatsapp.com/send?phone=5567999754293&text=Ola%2C%20estou%20interessado%20no%20servi%C3%A7o%20de%20voces!%20"
                           >
                             Solicite agora
                           </a>
-                        </button>
+                        
                       </div>
                       <div class="content-cover">
                         <img
@@ -642,15 +637,18 @@
       </div>
     </main>
 
-    <footer>
+    <footer id="contact">
       <div class="container">
-        <div class="footer">
+        <div class="footer" id="contact">
           <div class="footer-header">
             <a href="#home"><img src="/assets/images/logos/geo_white.png" alt="Logo Geofarm" /></a>
           </div>
 
           <div class="footer-content">
             <div class="adress">
+
+              <h3>Contato</h3>
+
               <a target="_blank" href="https://goo.gl/maps/bFkk4RCceinnYpst6"
                 ><i class="fas fa-map-marker-alt"></i>
                 <div>
@@ -672,7 +670,7 @@
               >
               <a href="/contact.html"
                 ><i class="fas fa-link"></i>
-                <p>Links Para Contato Comercial</p></a
+                <p>Contato Comercial</p></a
               >
             </div>
             <div class="form">
@@ -681,22 +679,32 @@
                 method="POST"
               >
                 <h3>Deixe sua mensagem !</h3>
+                <div class="campo">
+                  <label for="name">Nome:</label>
+                 
+                  <input type="text" name="name" required placeholder="Digite seu Nome"/>
+                </div>
+                <div class="campo">
+                  <label for="email">Email:</label>
+                <input type="email" name="email" required placeholder="Digite seu melhor Email"/>
 
-                <input type="text" name="name" required placeholder="Digite seu Nome"/>
-                <input type="email" name="email" required placeholder="Digite seu Email"/>
+                </div>
                 <input
                   type="hidden"
                   name="_autoresponse"
                   value="Obrigado pela sua mensagem !"
                 />
-                <textarea
+                <div class="campo-message">
+                  <label for="message">Mensagem:</label>
+                  <textarea
                   name="message"
                   id="message"
                   cols="50"
                   rows="15"
                   required
-                  placeholder="Digite sua mensagem"
+                  placeholder="Conte para nós como podemos lhe ajudar..."
                 ></textarea>
+                </div>
 
                 <input type="hidden" name="_captcha" value="false" />
                 <input

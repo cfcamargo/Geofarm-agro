@@ -78,6 +78,10 @@ window.addEventListener('scroll', () => {
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
+    autoplay: {
+        delay: 4500,
+        disableOnInteraction: true,
+      },
     loop: true,
     pagination: {
       el: ".swiper-pagination",
@@ -118,5 +122,13 @@ var swiper = new Swiper(".mySwiper", {
 })
 
 scrollReveal.reveal(`
-                    .banner-actions h1, .banner-actions a, .banner-selo, .division-wrapper, #cards h2 , .cards ,.subtitle, .content-description, .about-content.content-cover, #services.container h3, #services h4, #swipper-slide, .eletronics-header h3, .tx-cover, .tx-content, #faq h3, .faq, .footer-header, .adress, .form, .footer-footer
+                    .banner-actions h1, .banner-actions a, 
+                    .banner-selo, .division-wrapper, 
+                    #cards h2 , .cards ,.subtitle, 
+                    .content-description, .about-content.content-cover, 
+                    #services.container h3, #services h4, #swipper-slide, 
+                    .eletronics-header h3, .tx-cover, .tx-content, #faq h3, 
+                    .faq, .footer-header, .adress, .form, .footer-footer
                     `, {interval:100});
+
+
