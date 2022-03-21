@@ -129,6 +129,6 @@ scrollReveal.reveal(`
                     #services.container h3, #services h4, #swipper-slide, 
                     .eletronics-header h3, .tx-cover, .tx-content, #faq h3, 
                     .faq, .footer-header, .adress, .form, .footer-footer
-                    `, {interval:100});
+                    `, {interval:50});
 
 
